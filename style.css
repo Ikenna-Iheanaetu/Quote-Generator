@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Merriweather", sans-serif;
+}
+
+body {
+	justify-content: center;
+	align-items: center;
+	height: 1000px;
+	text-align: center;
+	background: url(./library.jpg) no-repeat center center/ cover;
+	padding: 7% 15%;
+}
+
+.container {
+	width: 550px;
+	height: 450px;
+	text-align: center;
+	align-items: right;
+	padding: 7% 15%;
+	margin: 2rem 0;
+}
+
+.header {
+	font-size: 1.2rem;
+	border: 2px solid #fff;
+	color: #fff;
+	background-color: #4d4848;
+	padding: 5px;
+	width: 80%;
+	margin: 20px auto;
+	border-radius: 1rem;
+}
+
+.main-content {
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	border-radius: 15px;
+	padding: 50px 40px;
+	box-shadow: 0 0 50px;
+}
+
+.main-content .text-area {
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+.main-content .person {
+	font-size: 2rem;
+	color: rgb(45, 45, 140);
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+
+.button-area button {
+	background-color: #4d4848;
+	color: #fff;
+	font-size: 1.3rem;
+	padding: 10px 15px;
+	margin: 20px 2rem;
+	border-radius: 0.5rem;
+}
+
+.button-area button:active {
+	background-color: gray;
+	color: #4d4848;
+}
+
+/* Media queries */
+
+@media (max-width: 600px) {
+	.container {
+		position: relative;
+		right: 100px;
+	}
+}
+@media (max-width: 600px) {
+    .container{
+        width: 450px;
+    }
+
+	.header {
+		font-size: 0.8rem;
+		padding: 3px;
+	}
+
+	.main-content {
+		padding: 25px 20px;
+	}
+
+	.main-content .text-area {
+		line-height: 1.5;
+		font-size: 1.2rem;
+	}
+
+	.main-content .person {
+		font-size: 1.5rem;
+	}
+
+	.button-area button {
+		font-size: 0.9rem;
+		padding: 8px 13px;
+		margin: 20px 2rem;
+	}
+}
+
+@media (max-width: 400px){
+    .container{
+        width: 400px;
+    }
+}
+
+@media (max-width: 340px){
+    .container{
+        width: 370px;
+    }
+}
